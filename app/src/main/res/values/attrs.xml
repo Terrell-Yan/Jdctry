@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="CircleFlowIndicator">
+        <attr name="activeColor" format="color" />
+        <attr name="inactiveColor" format="color" />
+        <attr name="radius" format="dimension" />
+        <attr name="centered" format="boolean" />
+        <attr name="fadeOut" format="integer" />
+        <attr name="inactiveType">
+            <flag name="stroke" value="0" />
+            <flag name="fill" value="1" />
+        </attr>
+        <attr name="activeType">
+            <flag name="stroke" value="0" />
+            <flag name="fill" value="1" />
+        </attr>
+        <attr name="circleSeparation" format="dimension" />
+        <attr name="activeRadius" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="ViewFlow">
+        <attr name="sidebuffer" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="PtrFrameLayout">
+        <!-- Optional. If you put header and content in xml, you can you these to specify them. -->
+        <attr name="ptr_header" format="reference" />
+        <attr name="ptr_content" format="reference" />
+
+        <!-- the resistance when you are moving the frame -->
+        <attr name="ptr_resistance" format="float" />
+
+        <!-- the ration of the height of the header to trigger refresh -->
+        <attr name="ptr_ratio_of_header_height_to_refresh" format="float" />
+
+        <attr name="ptr_duration_to_close" format="integer" />
+        <attr name="ptr_duration_to_close_header" format="integer" />
+
+        <!-- pull to refresh, otherwise release to refresh, default is release to refresh -->
+        <attr name="ptr_pull_to_fresh" format="boolean" />
+
+        <!-- keep header when refreshing-->
+        <attr name="ptr_keep_header_when_refresh" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="PtrClassicHeader">
+        <attr name="ptr_rotate_ani_time" format="integer" />
+    </declare-styleable>
+    //AspectRatioLayout=======================
+    <declare-styleable name="AspectRatioLayout">
+        <attr name="Layout_viewAspectRatio" format="float" />
+    </declare-styleable>
+    //percent layout attr
+    <declare-styleable name="PercentLayout_Layout">
+        <attr name="layout_widthPercent" format="fraction" />
+        <attr name="layout_heightPercent" format="fraction" />
+        <attr name="layout_marginPercent" format="fraction" />
+        <attr name="layout_marginLeftPercentX" format="fraction" />
+        <attr name="layout_marginLeftPercentY" format="fraction" />
+        <attr name="layout_marginLeftPercentScreenX" format="fraction" />
+        <attr name="layout_marginTopPercentX" format="fraction" />
+        <attr name="layout_marginTopPercentY" format="fraction" />
+        <attr name="layout_marginTopPercentScreenX" format="fraction" />
+        <attr name="layout_marginRightPercentX" format="fraction" />
+        <attr name="layout_marginRightPercentY" format="fraction" />
+        <attr name="layout_marginRightPercentScreenX" format="fraction" />
+        <attr name="layout_marginBottomPercentX" format="fraction" />
+        <attr name="layout_marginBottomPercentY" format="fraction" />
+        <attr name="layout_marginBottomPercentScreenX" format="fraction" />
+        <attr name="layout_marginStartPercent" format="fraction" />
+        <attr name="layout_marginEndPercent" format="fraction" />
+        <attr name="layout_aspectRatio" format="fraction" />
+        <attr name="layout_selfAspectRatio" format="float" />
+        <attr name="layout_widthTextSizePercent" format="fraction" />
+        <attr name="layout_screenWidthTextSizePercent" format="fraction" />
+        <attr name="layout_heightTextSizePercent" format="fraction" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.seanm.jdctry.view.AspectRatioLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:Layout_viewAspectRatio="3.53"
+    android:orientation="horizontal">
+    <com.example.seanm.jdctry.view.PercentRelativeLayout
+        android:background="@color/white"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/find_good_stuff_left_title"
+            app:layout_marginTopPercentScreenX="2%"
+            app:layout_marginLeftPercentScreenX="3%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="发现好货"
+            app:layout_screenWidthTextSizePercent="4.5%"
+            android:textColor="#009966"
+            />
+        <TextView
+            android:id="@+id/find_good_stuff_left_sub_title"
+            app:layout_marginTopPercentScreenX="1%"
+            app:layout_marginLeftPercentScreenX="3%"
+            android:layout_below="@+id/find_good_stuff_left_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="生活 新 风 尚"
+            app:layout_screenWidthTextSizePercent="3.5%"
+            android:textColor="#fff"
+            android:background="#009966"
+            />
+        <ImageView
+            android:id="@+id/find_good_stuff_left_img"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="100dp"
+
+            android:layout_height="80dp"
+
+            />
+        <View
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lineColor"/>
+        <View
+            android:layout_alignParentRight="true"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/lineColor"
+            />
+    </com.example.seanm.jdctry.view.PercentRelativeLayout>
+
+
+    <com.example.seanm.jdctry.view.PercentRelativeLayout
+        android:background="@color/white"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/find_good_stuff_right_title"
+            app:layout_marginTopPercentScreenX="2%"
+            app:layout_marginLeftPercentScreenX="3%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="优品专辑"
+            android:textStyle="bold"
+            app:layout_screenWidthTextSizePercent="4.5%"
+            android:textColor="#FF6600"
+            />
+        <TextView
+            android:id="@+id/title_desc"
+            app:layout_marginTopPercentScreenX="1%"
+            app:layout_marginLeftPercentScreenX="3%"
+            android:layout_below="@+id/find_good_stuff_right_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用心 质选良品"
+            app:layout_screenWidthTextSizePercent="3.5%"
+            android:textColor="#fff"
+            android:background="#FF6600"
+            />
+        <ImageView
+            android:id="@+id/find_good_stuff_right_img"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="100dp"
+
+            android:layout_height="80dp"
+
+            />
+        <View
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lineColor"/>
+    </com.example.seanm.jdctry.view.PercentRelativeLayout>
+
+</com.example.seanm.jdctry.view.AspectRatioLinearLayout>
