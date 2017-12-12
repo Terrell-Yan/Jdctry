@@ -1,9 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
- <android.support.v7.widget.RecyclerView
-     android:id="@+id/tao_recy"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:background="#Ffffff"
+    >
+ <com.example.seanm.jdctry.recy.RefreshLayout
+
+     android:id="@+id/home_recy"
      android:layout_width="match_parent"
-     android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
-</LinearLayout>
+     android:layout_height="match_parent">
+
+ </com.example.seanm.jdctry.recy.RefreshLayout>
+ <LinearLayout
+     android:id="@+id/cart_lin"
+     android:layout_width="match_parent"
+     android:layout_height="40dp"
+     android:background="#FF5000"
+     android:orientation="horizontal" >
+
+  <ImageView
+      android:id="@+id/iv_shao"
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:padding="8dp"
+      android:src="@drawable/menu_top_left" />
+
+  <TextView
+      android:id="@+id/tv_top_title"
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_weight="4"
+      android:gravity="center"
+      android:text="双12--庆店铺"
+      android:textColor="#FFFFFF"
+      android:background="@drawable/bg_menu_edit"
+      android:textSize="15sp" />
+
+  <ImageView
+      android:id="@+id/iv_refresh"
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:padding="8dp"
+      android:src="@drawable/menu_top_right" />
+ </LinearLayout>
+</RelativeLayout>
