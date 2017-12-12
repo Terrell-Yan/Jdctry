@@ -53,7 +53,7 @@ public class Home_F extends Fragment implements HeaderRecyView.RefreshDistanceLi
         homeTitleBarLayout=view.findViewById(R.id.home_title_bar_layout);
         scanningLayout=view.findViewById(R.id.scanning_layout);
         advisoryLayout=view.findViewById(R.id.advisory_layout);
-        headerRecyView=view.findViewById(R.id.rotate_header_list_view_frame);
+        headerRecyView=view.findViewById(R.id.rotate_header_list_view_frame2);
         return view;
     }
 
