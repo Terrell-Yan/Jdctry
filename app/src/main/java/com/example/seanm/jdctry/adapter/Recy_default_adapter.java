@@ -1,15 +1,11 @@
 package com.example.seanm.jdctry.adapter;
 
 import android.content.Context;
-import android.net.Uri;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.BaseAdapter;
-import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -19,7 +15,6 @@ import com.example.seanm.jdctry.R;
 import com.example.seanm.jdctry.presenter.HomeIndex;
 import com.example.seanm.jdctry.recy.BaseRecycleAdapter;
 import com.example.seanm.jdctry.recy.RecyBsViewHolder;
-import com.example.seanm.jdctry.view.ExpandImageView;
 import com.example.seanm.jdctry.view.MyGridView;
 import com.example.seanm.jdctry.view.bannerview.CircleFlowIndicator;
 import com.example.seanm.jdctry.view.bannerview.ImagePagerAdapter;
@@ -54,10 +49,10 @@ public class Recy_default_adapter extends RecyclerView.Adapter<RecyBsViewHolder>
     // 热门市场的资源文件
     private List<HomeIndex.ItemInfoListBean> itemInfoList;
 
-    public Recy_default_adapter(Context context, List<String> data, List<HomeIndex.ItemInfoListBean> itemInfoList) {
+    public Recy_default_adapter(Context context, List<String> data) {
         this.context = context;
         this.data = data;
-        this.itemInfoList = itemInfoList;
+
     }
 
     @Override
